@@ -1,0 +1,26 @@
+# ddns-go 官方二进制(从 releases 下载)
+ddns-go
+
+# 便携 nginx 运行时产物
+Nginx/logs/
+Nginx/tmp/
+Nginx/.runtime/
+Nginx/conf.d/apps.conf
+Nginx/conf.d/apps.conf.backup
+*.bak-tempfix
+
+# 控制台运行时状态
+Nginx/control/control-state.json
+Nginx/control/.runtime/
+Nginx/control/__pycache__/
+Nginx/control/.apply.lock
+
+# 第三方工具整包(从官方获取)
+Nginx/acme.sh/
+Nginx/deb/
+
+# Debian 包解包的二进制与文档
+Nginx/root/usr/
+
+*.pid
+.DS_Store

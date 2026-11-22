@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Nginx Control
+Name[zh_CN]=Nginx 反代控制台
+Comment=启动反代服务并打开配置控制台
+Exec=python3 "/path/to/ddnsGo/Nginx/control/launch-control.py"
+Path=/path/to/ddnsGo/Nginx/control
+Icon=/path/to/ddnsGo/Nginx/nginx-control.svg
+Terminal=false
+Categories=Network;
+StartupNotify=false
+Actions=Restart;Stop;
+
+[Desktop Action Restart]
+Name=重启反代与控制台
+Exec=python3 "/path/to/ddnsGo/Nginx/control/launch-control.py" --restart
+
+[Desktop Action Stop]
+Name=停止反代与控制台
+Exec=python3 "/path/to/ddnsGo/Nginx/control/launch-control.py" --stop
